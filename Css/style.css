@@ -1,0 +1,484 @@
+
+
+
+.banner
+{
+	background-image: url(../images/10.1.jpg);
+	height:700px;
+	background-size: cover;
+}
+.banner-text
+{
+	
+	margin-top: 350px;
+	width: 60%;
+}
+.banner-text h1
+{
+	font-size: 50px;
+	font-family: 'Ubuntu', sans-serif;
+}
+.banner-text .caption
+{
+	font-size: 22px;
+	color:white;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar
+{
+	background: #F1F1F1;
+}
+ 
+
+
+
+.navbar-nav li a
+{
+	color: grey;
+	font-weight: 500;
+}
+.navbar-nav li a:hover
+{
+	color:black;
+	
+}
+
+
+
+
+
+
+
+
+.about
+{
+	width:50%;
+}
+
+.about h1
+{
+font-family: 'Ubuntu', sans-serif;	
+}
+
+.design-image
+{
+	width:60px;
+	height:50px;
+}
+
+.services
+{
+	margin-top: 30px;
+}
+
+.portfolio
+{
+	margin-top: 30px;
+}
+
+.portfolio .row
+{
+	margin-top:40px;
+}
+
+.Professional-Skills
+{
+	margin-top: 40px;
+}
+
+.education
+{
+	margin-top: 20px;
+}
+
+.services h1
+{
+font-family: 'Ubuntu', sans-serif;	
+}
+.services hr,.skills hr,.portfolio hr,.contact hr,.education hr
+{
+ width:100px;
+	border-style: solid;
+		border-width:1px;
+		
+}
+
+.Professional-Skills hr
+{
+	width:200px;
+	border-style: solid;
+		border-width:1px;
+}
+
+
+.services .card
+{
+	box-shadow: 0 0  20px grey;
+	padding:10px;
+}
+
+.skills h1
+{
+font-family: 'Ubuntu', sans-serif;
+}
+.skills .progress
+{
+	height: 5px;
+}
+
+
+
+
+
+.progressbar-title{
+    font-size: 14px;
+    color: #848484;
+    text-transform: capitalize;
+}
+.progress{
+    height: 5px;
+    overflow: visible;
+    background: #f0f0f0;
+    margin-bottom: 40px;
+}
+.progress .progress-bar{
+    position: relative;
+    animation: animate-positive 2s;
+}
+.progress .progress-icon{
+    width: 30px;
+    height: 30px;
+    line-height: 25px;
+    border-radius: 50%;
+    font-size: 13px;
+    position: absolute;
+    top: -14px;
+    right: 0;
+    background: #fff;
+    border-width: 3px;
+    border-style: solid;
+}
+.progress-value{
+    font-size: 13px;
+    color: #848484;
+    position: absolute;
+    top: 16px;
+    right: 0;
+}
+@-webkit-keyframes animate-positive {
+    0% { width: 0%; }
+}
+@keyframes animate-positive {
+    0% { width: 0%; }
+}
+
+
+
+
+/*****************************************************portfolio*********************/
+.box{
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0 0 3px rgba(0,0,0,0.3);
+    position: relative;
+}
+.box:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #A09797;
+    opacity: 0;
+    position: absolute;
+	background: rgba(10,51,45,0.8);
+    
+    transition: all 0.3s ease 0s;
+}
+
+
+
+.box:hover:before
+{ opacity: 1; }
+.box img
+{
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+.box .box-text{
+    width: 100%;
+    padding-bottom: 30px;
+    color: #fff;
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    transition: all 0.3s ease 0s;
+}
+.box:hover .box-text
+{ bottom: 0; }
+
+.box .title{
+    display: block;
+    font-size: 22px;
+    font-weight: 700;
+    color: #e7a50f;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0 0 5px;
+}
+.box .post{
+    display: block;
+    font-size: 15px;
+    
+    font-weight: 600;
+}
+
+
+
+/************************************************education*************************************/
+
+
+.education .studies
+{
+	border-radius:8px;
+	border-bottom-style: inset;
+		border-bottom-width:5px;
+	border-bottom-color:#979da8;
+	
+	border-top-style: solid;
+		border-top-width:5px;
+	border-top-color:#979da8;
+	
+	
+}
+
+.contact
+{
+	box-shadow: 0 0  20px grey;
+margin-top: 40px;	
+}
+
+.contact .inputs .input
+{
+	border: 1px solid grey;
+	height:40px;
+	border-radius: 10px;
+}
+
+.contact .inputs .inputarea
+{ 
+	
+	border:1px solid grey;
+	height:90px;
+	border-radius: 10px;
+	
+}
+.text
+{
+	align:center;
+}
+
+.button
+{
+	border-radius: 50px;
+}
+
+.rights
+{
+	font-size: 12px;
+}
+
+.footer hr
+{
+	width: 15%;
+}
+
+.footer
+{
+	margin-top: 50px;
+	height: 100px;
+	background-color: #5f6063;
+}
+
+
+/********************************responsive**********************/
+
+@media only screen and (min-width:320px) and (max-width:991px)
+{
+	
+	.contact .inputs .inputarea
+{ 
+	height:50px;
+}
+	
+	.contact .inputs .input
+{
+	margin-top:10px;
+	height:30px;
+	
+}
+	
+	.about
+{
+	width:90%;
+}
+	
+}
+
+/********************************responsive**********************/
+@media only screen and (max-width:479px)
+{
+	
+	.me
+	{
+		font-size:px;
+	}
+	
+	
+.box{ margin-bottom: 30px; }
+
+	
+	.portfolio
+{
+	margin-top: 30px;
+}
+	
+	.portfolio .row
+{
+	margin-top:20px;
+}
+	
+	.services
+{
+	margin-top: 10px;
+}
+	
+	
+
+
+	
+	.education h2
+	{
+		font-size:18px;
+	}
+	
+	.portfolio h2
+	{
+		font-size:18px;
+	}
+	
+	.contact h2
+	{
+		font-size:18px;
+	}
+	
+	.card-title
+	{
+		font-size:18px;
+	}
+	
+	.services p
+	{
+		font-size:15px;
+	}
+	
+	.Professional-Skills h2
+	{
+		font-size:18px;
+	}
+	
+	.services hr,.skills hr,.portfolio hr,.contact hr,.education hr
+{
+ width:80px;
+	
+		
+}
+
+.Professional-Skills hr
+{
+	width:80px;
+	
+}
+	
+	.services h2
+	{
+		font-size:20px;
+	}
+	
+ .me
+  {
+	  margin-top:10px;
+	  text-align:center;
+	  font-size:18px;
+  }
+	
+	
+	.envelope
+	{
+		font-size:13px
+	}
+	
+	
+	.banner
+{
+	
+	height:470px;
+	
+}
+	
+	
+	.banner-text .caption
+{
+	font-size: 18px;
+	color:white;
+	font-family: 'Ubuntu', sans-serif;
+}
+	
+	
+	.banner-text h1
+{
+	font-size: 35px;
+	font-family: 'Ubuntu', sans-serif;
+}
+	
+	
+	.banner-text
+{
+	
+	margin-top: 140px;
+	width: 60%;
+}
+	
+    .box .box-text{ padding-bottom: 15px; }
+}
+
+
+
+
+  @media only screen and (max-width : 768px) {
+	.wow,.progress-bar
+	{
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+}
+
